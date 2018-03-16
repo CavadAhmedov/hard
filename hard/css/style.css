@@ -1,0 +1,50 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	width:100%;
+}
+.floated{
+	float:left;
+	width:33%;
+	height:500px;
+	margin-right:0.33%;
+	background-image:url(../img/back.jpg);
+	background-position:cover;
+	position:relative;
+}
+
+.clearfix{
+	clear:both;
+}
+
+.floated:nth-child(3){
+	margin-right:0;
+}
+
+.layout1{
+	position:absolute;
+	width:0%;
+	height:50%;
+	top:0;
+	left:0;
+	background-color:red;
+	transition:0.5s ease-in-out;
+}
+.layout2{
+	position:absolute;
+	height:50%;
+	width:0%;
+	right:0;
+	bottom:0;
+	background-color: blue;
+	transition:0.5s ease-in-out;
+}
+.floated:hover .layout1{
+	width:50%;
+}
+.floated:hover .layout2{
+	width:50%;
+}
